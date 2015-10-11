@@ -1,6 +1,7 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 #include "graphics.h"
+#include "globals.h"
 
 
 /* Graphics class
@@ -8,7 +9,7 @@
  */
 
 Graphics::Graphics() {
-	SDL_CreateWindowAndRenderer(640, 480, 0, &this->_window, &this->_renderer);
+	SDL_CreateWindowAndRenderer(globals::SCREEN_WIDTH, globals::SCREEN_HEIGHT, 0, &this->_window, &this->_renderer);
 	SDL_SetWindowTitle(this->_window, "Cavestory");
 }
 
@@ -18,7 +19,7 @@ Graphics::~Graphics() {
 
 SDL_Surface* Graphics::loadImage(const std::string &filePath) {
 	if (this->_spriteSheets.count(filePath) == 0) {
-		this->_spriteSheets[filePath] == IMG_Load(filePath.c_str());
+		this->_spriteSheets[filePath] = IMG_Load(filePath.c_str());
 	}
 	return _spriteSheets[filePath];
 }
