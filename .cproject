@@ -25,23 +25,21 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.option.optimization.level.429936405" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.583709510" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1792614992" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="/usr/lib/x86_64-linux-gnu"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/cavestory/source/headers}&quot;"/>
 								</option>
-								<option id="gnu.c.compiler.option.include.files.735088454" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
-									<listOptionValue builtIn="false" value="SDL.h"/>
-								</option>
+								<option id="gnu.c.compiler.option.include.files.735088454" name="Include files (-include)" superClass="gnu.c.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles"/>
+								<option id="gnu.c.compiler.option.dialect.std.225861687" superClass="gnu.c.compiler.option.dialect.std" value="gnu.c.compiler.dialect.default" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1682204479" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1600597967" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
 								<option id="gnu.cpp.compiler.option.optimization.level.1948279034" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.debugging.level.485048533" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.128046947" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="/usr/include/SDL2"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/cavestory/source/headers}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.include.files.329049165" name="Include files (-include)" superClass="gnu.cpp.compiler.option.include.files" useByScannerDiscovery="false" valueType="includeFiles">
-									<listOptionValue builtIn="false" value="SDL.h"/>
+									<listOptionValue builtIn="false" value="/usr/include/SDL2/SDL.h"/>
+									<listOptionValue builtIn="false" value="/usr/include/SDL2/SDL_image.h"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.dialect.std.2122425188" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1064901611" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -50,6 +48,7 @@
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.1966220720" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
 								<option id="gnu.cpp.link.option.libs.1555829110" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
 									<listOptionValue builtIn="false" value="SDL2"/>
+									<listOptionValue builtIn="false" value="SDL2_image"/>
 								</option>
 								<option id="gnu.cpp.link.option.paths.242361958" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/usr/lib/x86_64-linux-gnu"/>
