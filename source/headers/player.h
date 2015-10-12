@@ -16,7 +16,7 @@ class Graphics;
 class Player : public AnimatedSprite {
 public:
 	Player();
-	Player(Graphics &graphics, float x, float y);
+	Player(Graphics &graphics, Vector2 spawnPoint);
 	void draw(Graphics &graphics);
 	void update(float elapsedTime);
 
@@ -37,10 +37,20 @@ public:
 
 	virtual void animationDone(std::string currentAnimation);
 	virtual void setupAnimations();
+
+	/* void handleTileCollisions
+	 * handles collisions with all tiles the player is colliding with
+	 */
+	void handleTileCollisions(std::vector<Rectangle> &others);
+
+	const float getX() const;
+	const float getY() const;
 private:
 	float _dx, _dy;
 
 	Direction _facing;
+
+	bool _grounded;
 };
 
 
